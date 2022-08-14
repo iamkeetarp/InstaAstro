@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+a img.logo{
+    width: 160px;
+}
+nav{
+    position: relative;
+    display: flex;
+    padding: 20px 10%;
+}
+
+#contact{
+    position: absolute;
+    right: 10%;
+}
+
+#contact a img{
+    position: relative;    
+}
+#contact a img::after{
+   background-color: #FFFFFF;
+}
+#contact a{
+    color:  #606366;   
+    border: 1px solid #606366;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #606366;
+    font-size: 15px;
+    vertical-align: middle;
+    margin: 0 5px;
+    transition: all linear 0.2s; 
+}
+
+
+#contact a:hover{
+   background-color: #FD7E14;
+   color: #FFFFFF;
+   border: 1px solid #FD7E14;
+}
+
+#contact button{
+    padding: 10px 15px;
+    background-color: #FD7E14;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+    color: #FFFFFF;
+    vertical-align: middle;
+    border: 1px solid #FD7E14;
+    cursor: pointer;
+    position:relative;
+    top: 2px;
+}
+
+#links{
+    margin-top: 10px;
+    padding: 18px 8%;
+    display: flex;
+    background-color: #FFCC33;
+}
+
+#links ul.navbar-nav
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#links ul.navbar-nav li{
+    list-style: none;
+    text-decoration: none;
+    margin-left: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+#links ul.navbar-nav li span.highlighter{
+    background-color: #f00;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    border-radius: 13px;
+    color: #ffffff;
+    font-size: 9px;
+    padding: 0px 6px;
+    height: 15px;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+#calculator-description{
+    padding: 20px 10% 70px 10%;    
+}
+
+#calculator-description a{
+    color: #FD7E14;
+    text-decoration: none;
+}
+.small-text{
+    font-size: 14px;  
+    cursor: pointer;   
+}
+
+.img{
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #C3C3C3;
+    background-color: #F4F4F4;
+}
+.img img {
+    width: 100px;
+    height: 90px;
+}
+#love-calculator-description{
+    margin-top: 30px;
+    display: flex;
+}
+.text{
+    margin-left: 4%;
+    margin-top: 15px;
+}
+.text h1.heading{
+    font-size: 35px;
+    color: #212529;
+    margin-bottom: 10px;
+    line-height: 35px;
+    font-weight: bolder;
+    font-family: "Rajdhani", sans-serif;
+}
+
+p.para{
+    font-family: "DM Sans", sans-serif;
+    color: #212529;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+span.small-text{
+    color: #606366;
+}
+small.small-text{
+    color: #606366;
+}
+.calculator{
+    padding: 78px 0px;
+    background-color: #F8F8F8;
+}
+.calculator h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Rajdhani', 'Sans-serif';
+}
+
+.calculator p {
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #343a40;    
+}
+
+#form{
+    width: 80%;
+    margin: auto;
+    display:flex;
+    justify-content:flex-start;
+    /* border: 1px solid red; */
+    margin: 10px auto 20px auto;
+}
+label.nowrap{
+    font-size: 16px;
+    color: #606366;
+}
+input.form-control{
+    margin-top: 10px;
+    background-color: #fcfcfc !important;
+    font-size: 16px;
+    padding: 10px 15px; 
+}
+input.form-control::placeholder{
+    color: #C3C3C3;
+}
+.form-group select{
+    padding: 10px 15px;
+    border: 1px solid #C3C3C3;
+    margin:10px 10px 0px 10px;
+    font-size: 16px;
+}
+.d-flex{
+    margin-left: 20px;
+}
+select#w-30{
+    width: 160px;
+    border-radius: 4px;
+    padding-bottom: 13px;
+}
+.love-scale,.love-scale2{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.love-scale2{
+    margin-top: 30px;
+}
+.love-scale input,.love-scale2 input{
+    border-radius: 4px;
+    outline: none;
+    padding: 8px 12px;
+    margin-left: 15.2%;
+    width: 162px;
+    border: 1px solid #C3C3C3;
+}
+.love-scale input::placeholder, .love-scale2 input::placeholder{
+    color: #C3C3C3;
+}
+.love-scale2 input#input2{
+    margin-left: 9%;
+}
+
+
+input#calculate{
+    padding: 10px 40px;
+    background-color: #FD7E14;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #FFFFFF;
+    border: 1px solid #FD7E14;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    left: 42%;
+    top: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.text-data{
+    width: 80%;
+    margin: auto;
+    padding: 70px 0 70px 0;
+}
+
+h3{
+    font-size: 24px;
+    line-height: 29px;
+}
+.faq{
+    background-color: #F8F8F8;    
+    padding: 40px 10%;
+}
+.faq h3{
+    margin-bottom: 20px;
+}
+.faq p{
+   margin-bottom: 0px;
+    
+}
+.toggle1,.toggle2,.toggle3,.toggle4{
+    position: relative;
+    border: 1px solid #C3C3C3;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s all;
+
+    margin-bottom: 20px;
+}
+.toggle1 p{
+    font-weight: 500;
+    font-size: 16px;    
+}
+.arrow {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    right: 30px;
+    margin-top: 5px;
+    position: absolute;
+    cursor: pointer;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  p.data, p.data2,p.data3,p.data4{
+    font-size: 15px;
+    margin-top: 10px;
+    transition: .3s all ease;
+  }
+
+
+  #horoscope{
+    padding: 70px 0;
+    width: 80%;
+    margin: auto;
+   
+  }
+
+  .zodiac{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #horoscope h2{
+    text-align: center;
+    font-size: 29px;
+    line-height: 29px;
+  }
+  #horoscope p#tagline{
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px;
+    color: #343a40;
+    font-weight: 500
+  }
+  .horoscope-box{
+    text-align: center;
+    padding: 18px;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    flex: 1 1 15%;
+    transition: 0.3s all;
+    margin: 10px;
+    width: 16%;
+  }
+  .horoscope-box:hover{
+   border: 1px solid #FD7E14;
+   color: #FD7E14;
+  }
+.horoscope-box a{
+    text-decoration: none;
+}
+p.horoscope-name{
+    font-size: 16px;
+    color: #212529;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px auto 5px auto;
+  }
+p.horoscope-month{
+    color: #212529;
+    font-size: 14px;
+}
+.features,#footer{
+    background-color: #2C2D2E;  
+    color: #FFFFFF;  
+    padding: 40px 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    padding: 20px 20px;
+}
+.col a{
+    text-decoration: none;
+    color: #FFFFFF;  
+}
+.col a:hover{
+    color: #FD7E14;
+}
+
+#footer,#copyright{
+    background-color: #212529;
+}
+
+.col ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.col ul li{
+    line-height: 28px;
+} 
+.col ul li span:hover{
+    color: #FD7E14;
+    cursor: pointer;
+}
+.col img{
+    width: 140px;
+    display: block;
+    margin: 15px 8%;
+    cursor: pointer;
+}
+#icons{
+    margin-top: 25px;
+}
+img.icon{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 0px 15px 0 0;
+}
+#copyright
+{
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#copyright span {
+    text-align: center;
+    margin: 10px auto;
+}

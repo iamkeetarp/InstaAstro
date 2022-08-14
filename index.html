@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InstaAstro</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css"
+      integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div id="logo">
+        <a href="#"
+          ><img class="logo" src="./img/instaastro-logo.svg" alt=""
+        /></a>
+      </div>
+      <div id="contact">
+        <a href="#">
+          <img src="./img/chat-logo.svg" alt="" /> Cha with Astrologer</a
+        >
+        <a href="#"
+          ><img src="./img/call-logo.svg" alt="" /> Talk to Astrologer</a
+        >
+        <button class="login">Login</button>
+      </div>
+    </nav>
+    <div id="links">
+      <ul class="navbar-nav">
+        <li>Home</li>
+        <li>Kundli</li>
+        <li>Matchmaking</li>
+        <li>Horoscope</li>
+        <li>Live <span class="highlighter">New</span></li>
+        <li>Panchang</li>
+        <li>Calender</li>
+        <li>Blog</li>
+      </ul>
+    </div>
+    <div id="calculator-description">
+      <a href="#" class="small-text">Home</a>
+      <small class="small-text">></small>
+      <a href="#" class="small-text">Relatioship</a>
+      <small class="small-text">></small>
+      <span class="small-text">Love Calculator</span>
+
+      <div id="love-calculator-description">
+        <div class="img">
+          <img src="./img/love-calculator-image.svg" alt="" />
+        </div>
+        <div class="text">
+          <h1 class="heading">Love Calculator</h1>
+          <p class="para">
+            Want to know the chances of your love being successful or not?
+            InstaAstro presents Love Calculator Online to calculate the love
+            between you and your partner. Enter your details and find out the
+            love compatibility.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="calculator">
+      <h2>Free Love Calculator</h2>
+      <p class="mb-4">
+        Enter your details and Find out your Love compatibility with your
+        partner.
+      </p>
+<form action="" method="post">
+      <div id="form">
+        <div class="form-group col-md-3">
+          <label for="inputyourName" class="nowrap">Your name*</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputyourName"
+            placeholder="Enter your name"
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-3">
+          <label for="inputyourName" class="nowrap ms-2">Your gender*</label>
+          <select name="" id="" class="form-select">
+            <option value="">Select Gender</option>
+            <option value="">Male</option>
+            <option value="">Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="inputyourName" class="nowrap ms-4">Your DOB*</label>
+          <div class="d-flex">
+            <div id="date"></div>
+            <div id="month"></div>
+            <div id="year"></div>
+          </div>
+        </div>
+      </div>
+      <div id="form" class="mt-2">
+        <div class="form-group col-md-3">
+          <label for="inputyourName" class="nowrap">Partner name*</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputyourName"
+            placeholder="Enter his name"
+            required=""
+          />
+        </div>
+        <div class="form-group col-md-3">
+          <label for="inputyourName" class="nowrap ms-2">Partner gender*</label>
+          <select name="" id="" class="form-select">
+            <option value="">Select Gender</option>
+            <option value="">Male</option>
+            <option value="">Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="inputyourName" class="nowrap ms-4">Partner DOB*</label>
+          <div class="d-flex">
+            <div id="date2"></div>
+            <div id="month2"></div>
+            <div id="year2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="love-scale">
+        <label for=""
+          >How much do you love him or her on a scale from 1 to 100:*
+        </label>
+        <input type="text" name="" id="" placeholder="Type here" />
+      </div>
+      <div class="love-scale2">
+        <label for=""
+          >How much do you think he or she loves you on a scale from 1 to 100:*
+        </label>
+        <input type="text" name="" id="input2" placeholder="Type here" />
+      </div>
+      <!-- <button id="calculate" type="submit" onclick="result()">GET CALCULATE</button> -->
+      <input id="calculate" type="submit" value="GET CALCULATE" onclick="result() ">
+    </div>
+</form>
+    <div class="text-data">
+      <p>
+        Do you love someone and wish to know if they are the special ones? Do
+        you want to check your love compatibility strength with your partner?
+        Then, take the love compatibility test and find how much you score on
+        the love calculator. This tool will answer all your questions like "does
+        she love me?" and "are we perfect for each other?"
+      </p>
+      <p>
+        This Love Calculator Online tool is a direct method of finding out
+        whether you and your partner will be compatible or not. Simply enter
+        your and your partner's name and birth details, and get your
+        understanding of how much you love each other.
+      </p>
+      <p>
+        InstaAstro brings you an authentic way to calculate Love percentage and
+        decode your love connection. Our ultimate love test calculator online
+        conducts a love compatibility test based on your and your partner's name
+        and birth details. Then, it displays a love percentage that tells how
+        well you match with your partner or what are the odds of success of your
+        relationship. So, be ready to make the most of the accurate love
+        calculator and find your genuine soulmate connection with this love
+        tracker?
+      </p>
+      <h3 class="headings">
+        How Accurate is the Love Compatibility Calculator?
+      </h3>
+      <p>
+        The Love Compatibility calculator or Love Test Calculator online offers
+        results proven to be 100% accurate. In addition, the complex algorithms
+        on which the Online Love Calculator works offer complete authenticity to
+        love meter test results.
+      </p>
+      <h3 class="headings">How Does Love Percentage Calculator Work?</h3>
+      <p>
+        Is it a true love test? True Love Calculator follows specific algorithms
+        to calculate love percentage. This Love compatibility test or relation
+        finder tool follows an ancient system of numerology that utilizes your
+        date of birth and name for creating love calculations. It also includes
+        planetary influences analysed solely based on your date of birth. Since
+        the name and date of birth are the main aspects of finding a love
+        percentage, the love calculator online is referred to as a true love
+        name match or accurate love calculator by date of birth.
+      </p>
+      <h3 class="headings">How Can A True Love Calculator Help?</h3>
+      <p>
+        Finding your Love Compatibility or Love Percentage works wonders in your
+        life. Calculating your true love percentage by real love percentage
+        calculator by date of birth and name gives you clarity and detailed
+        insights into your relationship. A love parameter by a true love
+        calculator motivates you to build a better bond with your match. It
+        drives you to improve weaker aspects and maintain your bond. The Love
+        Calculator by name and date of birth, thus, is a fantastic tool to
+        calculate your love compatibility with your companion. Even if you are
+        in love with someone and desire to check if they are your soulmate or
+        not, this online love marriage calculator by date of birth is the
+        perfect way to find your best love match.
+      </p>
+    </div>
+    <div class="faq">
+      <h3 class="headings">Frequently Asked Questions</h3>
+      <div class="toggle1">
+        <p>Are love calculators accurate? <i class="arrow down"></i></p>
+        <p class="data">
+          Regardless of what any astrologer or 'expert' says, how a person views
+          or defines love is up to them. The results of any calculator should
+          have little bearing on whether or not a person chooses to pursue it.
+        </p>
+      </div>
+      <div class="toggle2">
+        <p>
+          How can an accurate love calculator help? <i class="arrow down"></i>
+        </p>
+        <p class="data2">
+          Love calculation by a love calculator on the basis of a specific
+          algorithm. Once you input the two names, this calculator matches the
+          first person's name against some love, and romance parameters.
+          Similarly, the name of your partner is checked against the same
+          parameters.
+        </p>
+      </div>
+      <div class="toggle3">
+        <p>
+          Should I approach my partner after getting a good result?<i
+            class="arrow down"
+          ></i>
+        </p>
+        <p class="data3">
+          Guys in love mimic their partners' words and actions. Pay attention to
+          how he acts around you. He'll try to mirror your actions and body
+          language to make you feel comfortable in his presence.
+        </p>
+      </div>
+      <div class="toggle4">
+        <p>Is this a dating calculator?<i class="arrow down"></i></p>
+        <p class="data4">
+          Finding your Love Percentage or Love Compatibility can work wonders in
+          your life. When you calculate love percentage with an accurate love
+          percentage calculator by name and date of birth.
+        </p>
+      </div>
+    </div>
+    <div id="horoscope">
+      <h2>Daily Horoscope</h2>
+      <p id="tagline">Your daily zodiac sign reading for free</p>
+      <div class="zodiac">
+        <div class="horoscope-box">
+          <a href="#">
+            <img
+              src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/aries.svg"
+              alt="Aries"
+            />
+            <p class="horoscope-name">Aries</p>
+            <p class="horoscope-month">Mar 21 -Apr 19</p>
+          </a>
+        </div>
+        <div class="horoscope-box">
+          <a href="#">
+            <img
+              src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/taurus.svg"
+              alt="Aries"
+            />
+            <p class="horoscope-name">Taurus</p>
+            <p class="horoscope-month">Mar 21 -Apr 19</p>
+          </a>
+        </div>
+        <div class="horoscope-box">
+          <a href="#">
+            <img
+              src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/gemini.svg"
+              alt="Aries"
+            />
+            <p class="horoscope-name">Gemini</p>
+            <p class="horoscope-month">Mar 21 -Apr 19</p>
+          </a>
+        </div>
+        <div class="horoscope-box">
+          <a href="#">
+            <img
+              src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/cancer.svg"
+              alt="Aries"
+            />
+            <p class="horoscope-name">Cancer</p>
+            <p class="horoscope-month">Mar 21 -Apr 19</p>
+          </a>
+        </div>
+        <div class="horoscope-box">
+          <a href="#">
+            <img
+              src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/leo.svg"
+              alt="Aries"
+            />
+            <p class="horoscope-name">Leo</p>
+            <p class="horoscope-month">Mar 21 -Apr 19</p>
+          </a>
+        </div>
+        <div class="horoscope-box">
+          <a href="#">
+            <img
+              src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/virgo.svg"
+              alt="Aries"
+            />
+            <p class="horoscope-name">Virgo</p>
+            <p class="horoscope-month">Mar 21 -Apr 19</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="zodiac">
+        <div class="horoscope-box">
+          <a href="#">
+            <img
+              src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/libra.svg"
+              alt="Aries"
+            />
+            <p class="horoscope-name">Libra</p>
+            <p class="horoscope-month">Mar 21 -Apr 19</p>
+          </a>
+        </div>
+        <div class="horoscope-box">
+          <a href="#">
+            <img
+              src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/scorpius.svg"
+              alt="Aries"
+            />
+            <p class="horoscope-name">Scorpio</p>
+            <p class="horoscope-month">Mar 21 -Apr 19</p>
+          </a>
+        </div>
+        <div class="horoscope-box">
+          <a href="#">
+            <img
+              src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/sagittarius.svg"
+              alt="Aries"
+            />
+            <p class="horoscope-name">Sagittarius</p>
+            <p class="horoscope-month">Mar 21 -Apr 19</p>
+          </a>
+        </div>
+        <div class="horoscope-box">
+          <a href="#">
+            <img
+              src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/capricornus.svg"
+              alt="Aries"
+            />
+            <p class="horoscope-name">Capricon</p>
+            <p class="horoscope-month">Mar 21 -Apr 19</p>
+          </a>
+        </div>
+        <div class="horoscope-box">
+          <a href="#">
+            <img
+              src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/aquarius.svg"
+              alt="Aries"
+            />
+            <p class="horoscope-name">Aquarius</p>
+            <p class="horoscope-month">Mar 21 -Apr 19</p>
+          </a>
+        </div>
+        <div class="horoscope-box">
+          <a href="#">
+            <img
+              src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/pisces.svg"
+              alt="Aries"
+            />
+            <p class="horoscope-name">Pieces</p>
+            <p class="horoscope-month">Mar 21 -Apr 19</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="features">
+      <div class="col">
+        <a href="#">Home</a>
+        <hr class="my-2" />
+        <a href="#">Talk with Astrologer</a>
+        <hr class="my-2" />
+
+        <a href="#">Live Astrologer</a>
+        <hr class="my-2" />
+
+        <a href="#">Daily Horoscope</a>
+        <hr class="my-2" />
+      </div>
+      <div class="col">
+        <a href="#">Kundli</a>
+        <hr class="my-2" />
+
+        <a href="#">Matchmaking</a>
+        <hr class="my-2" />
+
+        <a href="#">Blog</a>
+        <hr class="my-2" />
+
+        <a href="#">Calendar</a>
+        <hr class="my-2" />
+      </div>
+      <div class="col">
+        <a href="#">Arti Sangrah</a>
+        <hr class="my-2" />
+
+        <a href="#">Wallpapers</a>
+        <hr class="my-2" />
+      </div>
+    </div>
+    <div id="footer">
+      <div class="col">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><span>Privacy Policy</span></li>
+          <li><span>Terms & Conditions</span></li>
+          <li><span>Careers</span></li>
+          <li><span>Astrologer Registration</span></li>
+          <li><span>Help</span></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Download Our App</h4>
+        <img src="./img/google-play.png" alt="" />
+
+        <img src="./img/app-store.png" alt="" />
+      </div>
+      <div class="col">
+        <h4 class="ms-5">Contact Us</h4>
+        <span class="fw-bold ms-5 mt-3">Phone: </span>
+        <span>+91- 6366-937-227</span> <br />
+        <span class="fw-bold ms-5 my-4">Email: </span>
+        <span>support@instaastro.in</span>
+
+        <div id="icons" class="ms-5">
+          <img
+            class="icon"
+            src="https://img.icons8.com/ios-filled/50/000000/linkedin-circled--v1.png"
+          />
+          <img
+            class="icon"
+            src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png"
+          />
+          <img
+            class="icon"
+            src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png"
+          />
+          <img
+            class="icon"
+            src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png"
+          />
+          <img
+            class="icon"
+            src="https://img.icons8.com/ios-filled/50/000000/youtube-play.png"
+          />
+        </div>
+      </div>
+    </div>
+    <hr class="p-0 m-0" />
+    <div id="copyright">
+      <span class="text-center">Copyright © Instaastro 2022</span>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./script.js"></script>
+</html>
